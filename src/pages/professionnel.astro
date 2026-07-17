@@ -1,0 +1,459 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+---
+
+<Layout>
+  <fragment slot="header">
+    <Header />
+  </fragment>
+
+  <!-- Section 1: Hero -->
+  <section class="relative overflow-hidden group animate-fade-in bg-neutral-50 border-neutral-200 border rounded-3xl shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]" style="animation: 0.8s ease-out fadeIn; border-color: rgba(0, 158, 224, 0.3); background-color: rgba(255, 255, 255, 0.85);">
+    <div class="relative grid grid-cols-1 gap-8 sm:p-10 lg:grid-cols-12 lg:gap-10 pt-6 pr-6 pb-6 pl-6">
+      <div class="flex flex-col justify-center lg:col-span-7">
+        <div class="max-w-xl">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full border bg-white/70 px-3 py-1 text-xs font-medium backdrop-blur transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3); color: rgb(105, 105, 105);">
+            <span class="flex h-5 w-5 items-center justify-center rounded-full text-white" style="background-color: rgb(0, 158, 224);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3.5 w-3.5" data-lucide="building">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <path d="M9 22v-4h6v4"></path>
+                <path d="M8 6h.01"></path>
+                <path d="M16 6h.01"></path>
+                <path d="M12 6h.01"></path>
+                <path d="M12 10h.01"></path>
+                <path d="M12 14h.01"></path>
+                <path d="M16 10h.01"></path>
+                <path d="M16 14h.01"></path>
+                <path d="M8 10h.01"></path>
+                <path d="M8 14h.01"></path>
+              </svg>
+            </span>
+            <span style="color: rgb(0, 158, 224);">Infog&eacute;rance professionnelle</span>
+            <span class="mx-1.5 h-1 w-1 rounded-full" style="background-color: rgb(217, 224, 33);"></span>
+            <span>Monaco &amp; PACA</span>
+          </div>
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+            Votre partenaire IT
+            <br>
+            &agrave; Monaco.
+          </h1>
+          <p class="mt-5 max-w-lg text-lg leading-relaxed" style="color:#696969;">
+            Solutions d'infog&eacute;rance, cybers&eacute;curit&eacute; et visibilit&eacute; web pour les PME et ETI de Monaco et des Alpes-Maritimes.
+          </p>
+          <div class="flex flex-wrap gap-3 mt-8 items-center">
+            <a href="/contact" class="flex gap-2 focus:outline-none focus:ring-2 transition-all duration-300 hover:shadow-xl hover:scale-105 text-sm font-medium text-white w-full max-w-xs rounded-xl pt-3.5 pr-6 pb-3.5 pl-6 shadow-lg items-center justify-center hover:-translate-y-1 active:scale-95" style="background-color: rgb(0, 158, 224); --tw-ring-color: rgba(0,158,224,0.35);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" data-lucide="phone">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span class="text-sm">Contactez-nous</span>
+            </a>
+            <a href="#formules" class="inline-flex gap-2 hover:bg-neutral-50 text-sm font-medium text-neutral-900 bg-white border-neutral-300 border rounded-xl pt-3 pr-4 pb-3 pl-4 items-center transition-all duration-300 hover:scale-105 hover:shadow-md hover:-translate-y-0.5 active:scale-95">
+              Voir les formules
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="lg:col-span-5 flex items-center justify-center">
+        <div class="relative mx-auto aspect-square w-full max-w-sm overflow-hidden rounded-full border border-white/60 bg-white/80 shadow-lg backdrop-blur hover:scale-105 hover:shadow-2xl transition-all duration-500 hover:border-blue-300/60 group">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Bureau moderne" class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="pointer-events-none absolute inset-0 rounded-full ring-1 ring-inset ring-white/60"></div>
+        </div>
+      </div>
+    </div>
+    <style>
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    </style>
+  </section>
+
+  <!-- Section 2: Formules maintenance -->
+  <Section id="formules">
+    <div class="text-center mb-10">
+      <span class="text-sm font-normal" style="color:#696969;">Nos formules</span>
+      <h2 class="mt-2 text-4xl sm:text-5xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+        Forfaits maintenance informatique
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-sm" style="color:#696969;">
+        Des solutions adapt&eacute;es &agrave; la taille de votre entreprise. Intervention rapide, suivi personnalis&eacute;.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="rounded-2xl border p-6 bg-white/85 hover:bg-white/90 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <p class="text-sm font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Starter</p>
+        <p class="mt-2 text-3xl font-semibold" style="color: rgb(0, 158, 224);">199&euro;</p>
+        <p class="text-xs" style="color:#696969;">/mois</p>
+        <ul class="mt-4 space-y-2 text-sm" style="color:#696969;">
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Support 5j/7
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Intervention &lt; 2h
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            5 postes inclus
+          </li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85 hover:bg-white/90 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <p class="text-sm font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Business</p>
+        <p class="mt-2 text-3xl font-semibold" style="color: rgb(0, 158, 224);">399&euro;</p>
+        <p class="text-xs" style="color:#696969;">/mois</p>
+        <ul class="mt-4 space-y-2 text-sm" style="color:#696969;">
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Support 6j/7
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Intervention &lt; 1h
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            15 postes inclus
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Antivirus inclus
+          </li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85 hover:bg-white/90 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <p class="text-sm font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Premium</p>
+        <p class="mt-2 text-3xl font-semibold" style="color: rgb(0, 158, 224);">699&euro;</p>
+        <p class="text-xs" style="color:#696969;">/mois</p>
+        <ul class="mt-4 space-y-2 text-sm" style="color:#696969;">
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Support 24/7
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Intervention &lt; 30 min
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            30 postes inclus
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Sauvegarde cloud
+          </li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85 hover:bg-white/90 hover:shadow-lg hover:-translate-y-1 transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <p class="text-sm font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Enterprise</p>
+        <p class="mt-2 text-3xl font-semibold" style="color: rgb(0, 158, 224);">1 299&euro;</p>
+        <p class="text-xs" style="color:#696969;">/mois</p>
+        <ul class="mt-4 space-y-2 text-sm" style="color:#696969;">
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Support 24/7 prioritaire
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Intervention &lt; 15 min
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Postes illimit&eacute;s
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Cybers&eacute;curit&eacute; compl&egrave;te
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            SLA personnalis&eacute;
+          </li>
+        </ul>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Section 3: SécuriSite WP Pro -->
+  <Section>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <span class="text-sm font-normal" style="color:#696969;">S&eacute;curit&eacute; web</span>
+        <h2 class="mt-2 text-4xl sm:text-5xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+          S&eacute;curiSite WP Pro
+        </h2>
+        <p class="mt-4 text-sm" style="color:#696969;">
+          Prot&eacute;gez votre site WordPress contre les intrusions, les malwares et les attaques DDoS. Surveillance continue, mises &agrave; jour automatiques et sauvegardes quotidiennes.
+        </p>
+        <div class="mt-6 flex items-center gap-4">
+          <span class="text-3xl font-semibold" style="color: rgb(0, 158, 224);">99&euro;</span>
+          <span class="text-sm" style="color:#696969;">/mois</span>
+          <a href="/contact" class="inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5" style="background-color:#009EE0;">
+            Souscrire
+          </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" data-lucide="shield"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1 1 0 0 1 1.52 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+          </span>
+          <p class="mt-3 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Firewall applicatif</p>
+          <p class="mt-1 text-sm" style="color:#696969;">Blocage des attaques en temps r&eacute;el.</p>
+        </div>
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" data-lucide="refresh-cw"><path d="M21 2v6h-6"></path><path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path><path d="M3 22v-6h6"></path><path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path></svg>
+          </span>
+          <p class="mt-3 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Mises &agrave; jour auto</p>
+          <p class="mt-1 text-sm" style="color:#696969;">Core, th&egrave;mes et plugins &agrave; jour.</p>
+        </div>
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" data-lucide="hard-drive"><path d="M22 12 2 12"></path><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+          </span>
+          <p class="mt-3 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Sauvegarde quotidienne</p>
+          <p class="mt-1 text-sm" style="color:#696969;">Restauration en un clic.</p>
+        </div>
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" data-lucide="search"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          </span>
+          <p class="mt-3 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Scan malware</p>
+          <p class="mt-1 text-sm" style="color:#696969;">D&eacute;tection et nettoyage automatique.</p>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Section 4: Cybersécurité -->
+  <Section>
+    <div class="text-center mb-10">
+      <span class="text-sm font-normal" style="color:#696969;">Cybers&eacute;curit&eacute;</span>
+      <h2 class="mt-2 text-4xl sm:text-5xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+        S&eacute;curisez votre infrastructure
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-sm" style="color:#696969;">
+        Audit de s&eacute;curit&eacute;, conformit&eacute; RGPD et NIS2, solutions Bitdefender.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="rounded-2xl border p-6 bg-white/85 hover:shadow-lg transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6" data-lucide="bug"><path d="m8 2 1.88 1.88"></path><path d="M14.12 3.88 16 2"></path><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"></path><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"></path><path d="M12 20v-9"></path></svg>
+        </span>
+        <p class="mt-4 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Test d'intrusion</p>
+        <p class="mt-2 text-sm" style="color:#696969;">
+          Simulez une attaque pour identifier les failles de votre syst&egrave;me avant les pirates.
+        </p>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85 hover:shadow-lg transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6" data-lucide="shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1 1 0 0 1 1.52 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+        </span>
+        <p class="mt-4 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Bitdefender GravityZone</p>
+        <p class="mt-2 text-sm" style="color:#696969;">
+          Protection antivirus, EDR et XDR nouvelle g&eacute;n&eacute;ration pour les entreprises.
+        </p>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85 hover:shadow-lg transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6" data-lucide="file-text"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+        </span>
+        <p class="mt-4 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Conformit&eacute; RGPD &amp; NIS2</p>
+        <p class="mt-2 text-sm" style="color:#696969;">
+          Mise en conformit&eacute; r&eacute;glementaire et accompagnement CNIL.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Section 5: Visibilité web -->
+  <Section>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <span class="text-sm font-normal" style="color:#696969;">Visibilit&eacute; web</span>
+        <h2 class="mt-2 text-4xl sm:text-5xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+          Boostez votre pr&eacute;sence en ligne
+        </h2>
+        <p class="mt-4 text-sm" style="color:#696969;">
+          Cr&eacute;ation de sites, r&eacute;f&eacute;rencement naturel et campagnes SEA. Profitez du Fonds Bleu pour financer 30 &agrave; 70% de votre projet.
+        </p>
+        <a href="/contact" class="mt-6 inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5" style="background-color:#009EE0;">
+          En savoir plus
+        </a>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" data-lucide="globe"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </span>
+          <p class="mt-3 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Cr&eacute;ation site</p>
+          <p class="mt-1 text-sm" style="color:#696969;">Sites vitrine, e-commerce sur mesure.</p>
+        </div>
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" data-lucide="trending-up"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+          </span>
+          <p class="mt-3 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">SEO</p>
+          <p class="mt-1 text-sm" style="color:#696969;">R&eacute;f&eacute;rencement naturel pour &ecirc;tre visible.</p>
+        </div>
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" data-lucide="mouse-pointer"><path d="M12.586 12.586 19 19"></path><path d="M3.688 3.037a.497.497 0 0 0-.651.651l6.5 15.999a.5.5 0 0 0 .947-.062l1.569-6.083a2 2 0 0 1 1.525-1.525l6.083-1.569a.5.5 0 0 0 .062-.947z"></path></svg>
+          </span>
+          <p class="mt-3 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">SEA</p>
+          <p class="mt-1 text-sm" style="color:#696969;">Campagnes Google Ads cibl&eacute;es.</p>
+        </div>
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" data-lucide="euro"><path d="M4 10h12"></path><path d="M4 14h12"></path><path d="M16 6a8 8 0 1 1 0 12"></path></svg>
+          </span>
+          <p class="mt-3 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Fonds Bleu 30-70%</p>
+          <p class="mt-1 text-sm" style="color:#696969;">Financement partiel de votre projet.</p>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Section 6: Pack Infogérance -->
+  <Section>
+    <div class="text-center mb-10">
+      <span class="text-sm font-normal" style="color:#696969;">Infog&eacute;rance</span>
+      <h2 class="mt-2 text-4xl sm:text-5xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+        Pack Infog&eacute;rance complet
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-sm" style="color:#696969;">
+        Installation, assistance et sauvegarde cloud. Une solution cl&eacute; en main pour votre infrastructure.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="rounded-2xl border p-6 bg-white/85 hover:shadow-lg transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6" data-lucide="settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+        </span>
+        <p class="mt-4 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Installation &amp; configuration</p>
+        <p class="mt-2 text-sm" style="color:#696969;">
+          Mise en place de vos serveurs, r&eacute;seaux et postes de travail.
+        </p>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85 hover:shadow-lg transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6" data-lucide="headphones"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path></svg>
+        </span>
+        <p class="mt-4 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Assistance &amp; support</p>
+        <p class="mt-2 text-sm" style="color:#696969;">
+          Helpdesk r&eacute;actif pour vos incidents quotidiens.
+        </p>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85 hover:shadow-lg transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6" data-lucide="cloud"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>
+        </span>
+        <p class="mt-4 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">HelpBackup cloud</p>
+        <p class="mt-2 text-sm" style="color:#696969;">
+          Sauvegarde externalis&eacute;e et restauration garantie.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Section 7: À propos / Équipe -->
+  <Section>
+    <div class="text-center mb-10">
+      <span class="text-sm font-normal" style="color:#696969;">Notre &eacute;quipe</span>
+      <h2 class="mt-2 text-4xl sm:text-5xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+        Qui sommes-nous&nbsp;?
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-sm" style="color:#696969;">
+        Une &eacute;quipe d'experts passionn&eacute;s, bas&eacute;e &agrave; Monaco.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="rounded-2xl border p-6 bg-white/85 text-center hover:shadow-lg transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <div class="mx-auto h-20 w-20 rounded-full bg-gradient-to-br" style="background: linear-gradient(135deg, #009EE0, #D9E021);"></div>
+        <p class="mt-4 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Johan</p>
+        <p class="text-xs" style="color:#696969;">Fondateur &amp; expert IT</p>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85 text-center hover:shadow-lg transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <div class="mx-auto h-20 w-20 rounded-full bg-gradient-to-br" style="background: linear-gradient(135deg, #009EE0, #D9E021);"></div>
+        <p class="mt-4 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Paul</p>
+        <p class="text-xs" style="color:#696969;">Ing&eacute;nieur syst&egrave;me</p>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85 text-center hover:shadow-lg transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <div class="mx-auto h-20 w-20 rounded-full bg-gradient-to-br" style="background: linear-gradient(135deg, #009EE0, #D9E021);"></div>
+        <p class="mt-4 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Alex</p>
+        <p class="text-xs" style="color:#696969;">D&eacute;veloppeur web</p>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85 text-center hover:shadow-lg transition-all duration-300" style="border-color: rgba(0, 158, 224, 0.3);">
+        <div class="mx-auto h-20 w-20 rounded-full bg-gradient-to-br" style="background: linear-gradient(135deg, #009EE0, #D9E021);"></div>
+        <p class="mt-4 text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Camelia</p>
+        <p class="text-xs" style="color:#696969;">Charg&eacute;e de client&egrave;le</p>
+      </div>
+    </div>
+  </Section>
+
+  <!-- Section 8: Contact -->
+  <Section>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div>
+        <span class="text-sm font-normal" style="color:#696969;">Contact</span>
+        <h2 class="mt-2 text-4xl sm:text-5xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+          Parlons de votre projet
+        </h2>
+        <p class="mt-4 text-sm" style="color:#696969;">
+          Contactez-nous pour un audit gratuit et un devis personnalis&eacute;.
+        </p>
+        <div class="mt-6 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </span>
+            <div>
+              <p class="text-sm font-medium" style="color: rgb(0, 158, 224);">06 78 56 54 30</p>
+              <p class="text-xs" style="color:#696969;">Du lundi au vendredi, 9h-18h</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </span>
+            <div>
+              <p class="text-sm font-medium" style="color: rgb(0, 158, 224);">HBC 33 Rue Grimaldi</p>
+              <p class="text-xs" style="color:#696969;">98000 Monaco</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85" style="border-color: rgba(0, 158, 224, 0.3);">
+        <p class="text-sm font-semibold mb-4" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Formulaire de contact</p>
+        <form class="space-y-4">
+          <div>
+            <input type="text" placeholder="Nom" class="w-full rounded-xl border px-4 py-2.5 text-sm bg-white" style="border-color: rgba(0, 158, 224, 0.3); color:#696969;">
+          </div>
+          <div>
+            <input type="email" placeholder="Email" class="w-full rounded-xl border px-4 py-2.5 text-sm bg-white" style="border-color: rgba(0, 158, 224, 0.3); color:#696969;">
+          </div>
+          <div>
+            <textarea placeholder="Message" rows="4" class="w-full rounded-xl border px-4 py-2.5 text-sm bg-white" style="border-color: rgba(0, 158, 224, 0.3); color:#696969;"></textarea>
+          </div>
+          <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 w-full" style="background-color: rgb(0, 158, 224);">
+            Envoyer
+          </button>
+        </form>
+      </div>
+    </div>
+  </Section>
+
+  <fragment slot="footer">
+    <Footer />
+  </fragment>
+</Layout>

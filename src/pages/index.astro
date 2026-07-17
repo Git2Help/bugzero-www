@@ -1,17 +1,41 @@
 ---
-
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ExpertisesSection from '../components/ExpertisesSection.astro';
+import MethodeSection from '../components/MethodeSection.astro';
+import TemoignagesSection from '../components/TemoignagesSection.astro';
+import CTASection from '../components/CTASection.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <fragment slot="header">
+    <Header />
+  </fragment>
+
+  <HeroSection />
+  <ExpertisesSection />
+
+  <!-- Logos / Social proof -->
+  <section class="sm:py-12 max-w-7xl mt-10 mr-auto ml-auto pt-10 pr-0 pb-10 pl-0" style="display:none;">
+    <div class="flex flex-wrap gap-x-10 gap-y-6 text-neutral-500 items-center justify-center">
+      <span class="text-xs font-medium">
+        Trusted by labs and creative studios
+      </span>
+      <div class="h-5 w-px bg-neutral-200"></div>
+      <span class="text-sm font-medium">VantaLab</span>
+      <span class="text-sm font-medium">HelixWorks</span>
+      <span class="text-sm font-medium">Orbit Research</span>
+      <span class="text-sm font-medium">SignalForge</span>
+    </div>
+  </section>
+
+  <MethodeSection />
+  <TemoignagesSection />
+  <CTASection />
+
+  <fragment slot="footer">
+    <Footer />
+  </fragment>
+</Layout>
