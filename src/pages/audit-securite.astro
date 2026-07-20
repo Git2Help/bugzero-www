@@ -1,0 +1,81 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+---
+
+<Layout>
+  <fragment slot="header">
+    <Header />
+  </fragment>
+
+  <Section>
+    <div class="text-center mb-10">
+      <span class="text-sm font-normal" style="color:#696969;">Audit de securite</span>
+      <h2 class="mt-2 text-4xl sm:text-5xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+        Votre entreprise est-elle vraiment protegee ?
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-sm" style="color:#696969;">
+        Test d'intrusion complet a 500 euros HT. Rapport detaille en 48h.
+      </p>
+    </div>
+    <div class="text-center">
+      <a href="/contact" class="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 text-base font-medium text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5" style="background-color:#009EE0;">
+        Je demande un audit
+      </a>
+    </div>
+  </Section>
+
+  <Section>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <h3 class="text-2xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+          Pourquoi cet audit ?
+        </h3>
+        <p class="mt-4 text-sm" style="color:#696969;">
+          60% des PME ayant subi une cyberattaque deposent le bilan sous 6 mois. Nos tests simulent de vraies attaques : phishing, ransomware, intrusion reseau. Vous recevez un rapport clair avec les failles detectees et les correctifs a appliquer.
+        </p>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85" style="border-color: rgba(0, 158, 224, 0.3);">
+        <h4 class="text-sm font-semibold mb-3" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Ce que comprend l'audit</h4>
+        <ul class="space-y-2 text-sm" style="color:#696969;">
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Analyse de votre parc informatique (jusqu'a 30 IP/VLAN)
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Test d'intrusion automatise par IA (partenaire SXIPHER)
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Rapport de vulnerabilites et plan d'action priorise
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Conformite RGPD et NIS2 incluse
+          </li>
+        </ul>
+      </div>
+    </div>
+  </Section>
+
+  <Section>
+    <div class="text-center">
+      <p class="italic text-base" style="color:#696969;">
+        &laquo; L'audit a revele deux breches critiques. Bugzero a corrige le tout en une semaine. &raquo;
+      </p>
+      <p class="mt-2 text-sm font-semibold" style="color: rgb(0, 158, 224);">PME a Monaco</p>
+      <div class="mt-8">
+        <a href="/contact" class="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 text-base font-medium text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5" style="background-color:#009EE0;">
+          Protegez votre activite des maintenant
+        </a>
+      </div>
+    </div>
+  </Section>
+
+  <fragment slot="footer">
+    <Footer />
+  </fragment>
+</Layout>

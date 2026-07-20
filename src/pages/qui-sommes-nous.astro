@@ -1,0 +1,80 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+---
+
+<Layout>
+  <fragment slot="header">
+    <Header />
+  </fragment>
+
+  <Section>
+    <div class="text-center mb-10">
+      <span class="text-sm font-normal" style="color:#696969;">Qui sommes-nous</span>
+      <h2 class="mt-2 text-4xl sm:text-5xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+        Qui se cache derriere Bugzero ?
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-sm" style="color:#696969;">
+        Une equipe monegasque de passionnes, a votre service depuis 15 ans.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-sm" style="color:#696969;">
+          Bugzero est la marque grand public et professionnelle de Helperiance (www.helperiance.com), societe fondee en 2010 par Johan Chauvet (CEO) et Lyonel Sireuille (associe).
+        </p>
+        <p class="mt-4 text-sm" style="color:#696969;">
+          Notre mission : rendre l'informatique simple, fiable et securisee pour les particuliers comme pour les entreprises.
+        </p>
+        <p class="mt-4 text-sm" style="color:#696969;">
+          Bases au 9, Allee Lazare Sauvaigo a Monaco, nous intervenons dans tout le bassin monegasque, de Nice a Menton.
+        </p>
+        <p class="mt-4 text-sm" style="color:#696969;">
+          Bugzero s'appuie sur une equipe de techniciens certifies (Frederic, Alex, Camelia) et des partenaires de confiance : Monaco Cloud, Dell, Bitdefender.
+        </p>
+        <div class="mt-6 space-y-4">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </span>
+            <div>
+              <p class="text-sm font-medium" style="color: rgb(0, 158, 224);">06 78 56 54 30</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl" style="background-color: rgba(217, 224, 33, 0.3); color: rgb(0, 158, 224);">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+            </span>
+            <div>
+              <p class="text-sm font-medium" style="color: rgb(0, 158, 224);">bonjour@bugzero.fr</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <p class="text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Johan CHAUVET</p>
+          <p class="text-xs" style="color:#696969;">CEO</p>
+        </div>
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <p class="text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Lyonel SIREUILLE</p>
+          <p class="text-xs" style="color:#696969;">Associe</p>
+        </div>
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <p class="text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Frederic</p>
+          <p class="text-xs" style="color:#696969;">Technicien support</p>
+        </div>
+        <div class="rounded-2xl border p-5 bg-white/80" style="border-color: rgba(0, 158, 224, 0.3);">
+          <p class="text-sm font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Alex &amp; Camelia</p>
+          <p class="text-xs" style="color:#696969;">Developpeurs</p>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <fragment slot="footer">
+    <Footer />
+  </fragment>
+</Layout>

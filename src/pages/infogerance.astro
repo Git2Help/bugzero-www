@@ -1,0 +1,80 @@
+---
+import Layout from '../components/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Section from '../components/Section.astro';
+---
+
+<Layout>
+  <fragment slot="header">
+    <Header />
+  </fragment>
+
+  <Section>
+    <div class="text-center mb-10">
+      <span class="text-sm font-normal" style="color:#696969;">Infogerance</span>
+      <h2 class="mt-2 text-4xl sm:text-5xl font-semibold tracking-tight" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">
+        Toute votre informatique externalisee. Zero souci.
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-sm" style="color:#696969;">
+        Installation, gestion, securite, depannage. Un interlocuteur unique.
+      </p>
+    </div>
+    <div class="text-center">
+      <a href="/contact" class="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 text-base font-medium text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5" style="background-color:#009EE0;">
+        Je veux un devis
+      </a>
+    </div>
+  </Section>
+
+  <Section>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <h3 class="text-2xl font-semibold" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Le Pack Infogerance comprend</h3>
+        <ul class="mt-4 space-y-2 text-sm" style="color:#696969;">
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Audit initial de votre infrastructure
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Installation et configuration des postes, reseau, logiciels
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Maintenance preventive et corrective
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Sauvegarde externalisee HelpBackup (pilote par Bugzero)
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(217, 224, 33);"><path d="M20 6 9 17l-5-5"></path></svg>
+            Support reactif et tickets illimites
+          </li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border p-6 bg-white/85" style="border-color: rgba(0, 158, 224, 0.3);">
+        <h4 class="text-sm font-semibold mb-3" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Ideal pour</h4>
+        <ul class="space-y-2 text-sm" style="color:#696969;">
+          <li>Les TPE/PME sans service informatique</li>
+          <li>Les createurs d'entreprise qui veulent du cle-en-main</li>
+          <li>Les cabinets ayant des besoins de conformite (RGPD)</li>
+        </ul>
+        <p class="mt-6 italic text-sm" style="color:#696969;">
+          &laquo; On a externalise tout le support a Bugzero. Meilleure decision de l'annee. &raquo;
+        </p>
+        <p class="mt-1 text-sm font-semibold" style="color: rgb(0, 158, 224);">Agence de communication, Monaco</p>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <a href="/contact" class="inline-flex items-center justify-center gap-2 rounded-xl px-8 py-4 text-base font-medium text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5" style="background-color:#009EE0;">
+        Parler a un expert
+      </a>
+    </div>
+  </Section>
+
+  <fragment slot="footer">
+    <Footer />
+  </fragment>
+</Layout>
