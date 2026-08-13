@@ -53,20 +53,68 @@ import Section from '../components/Section.astro';
       </div>
       <div class="rounded-2xl border p-6 bg-white/85" style="border-color: rgba(0, 158, 224, 0.3);">
         <p class="text-sm font-semibold mb-4" style="font-family: &quot;Futura Sd&quot;, Futura, &quot;Trebuchet MS&quot;, sans-serif; color: rgb(0, 158, 224);">Envoyez-nous un message</p>
-        <form class="space-y-4">
+        <form id="contact-form" class="space-y-4">
+          <input type="hidden" name="template" value="www">
+          <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
           <div>
-            <input type="text" placeholder="Nom" class="w-full rounded-xl border px-4 py-2.5 text-sm bg-white" style="border-color: rgba(0, 158, 224, 0.3); color:#696969;">
+            <input type="text" name="name" id="name" placeholder="Nom" required class="w-full rounded-xl border px-4 py-2.5 text-sm bg-white" style="border-color: rgba(0, 158, 224, 0.3); color:#696969;">
           </div>
           <div>
-            <input type="email" placeholder="Email" class="w-full rounded-xl border px-4 py-2.5 text-sm bg-white" style="border-color: rgba(0, 158, 224, 0.3); color:#696969;">
+            <input type="email" name="email" id="email" placeholder="Email" required class="w-full rounded-xl border px-4 py-2.5 text-sm bg-white" style="border-color: rgba(0, 158, 224, 0.3); color:#696969;">
           </div>
           <div>
-            <textarea placeholder="Votre message" rows="4" class="w-full rounded-xl border px-4 py-2.5 text-sm bg-white" style="border-color: rgba(0, 158, 224, 0.3); color:#696969;"></textarea>
+            <input type="tel" name="phone" id="phone" placeholder="Téléphone (optionnel)" class="w-full rounded-xl border px-4 py-2.5 text-sm bg-white" style="border-color: rgba(0, 158, 224, 0.3); color:#696969;">
+          </div>
+          <div>
+            <textarea name="message" id="message" placeholder="Votre message" rows="4" required class="w-full rounded-xl border px-4 py-2.5 text-sm bg-white" style="border-color: rgba(0, 158, 224, 0.3); color:#696969;"></textarea>
           </div>
           <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-medium text-white transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 w-full" style="background-color: rgb(0, 158, 224);">
             Envoyer
           </button>
         </form>
+        <div id="contact-success" style="display:none" class="mt-4 p-6 rounded-xl text-center" style="background-color: rgba(0, 158, 224, 0.1);">
+          <p class="text-sm font-medium" style="color: rgb(0, 158, 224);">Merci pour votre message, il a bien été transmis.</p>
+          <p class="text-xs mt-2" style="color:#696969;">Nous vous répondons dans l'heure.</p>
+        </div>
+        <div id="contact-error" style="display:none" class="mt-4 p-4 rounded-xl" style="background-color: rgba(255,0,0,0.1);">
+          <p class="text-sm font-medium text-red-600" id="contact-error-msg"></p>
+        </div>
+        <script>
+          const form = document.getElementById('contact-form');
+          const successMsg = document.getElementById('contact-success');
+          const errorMsg = document.getElementById('contact-error');
+          const errorMsgText = document.getElementById('contact-error-msg');
+          form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            const btn = form.querySelector('button[type="submit"]');
+            btn.disabled = true;
+            btn.textContent = 'Envoi en cours...';
+            try {
+              const res = await fetch('https://automate.bugzero.fr/webhook/contact-bugzero', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+              });
+              const result = await res.json();
+              if (result.success) {
+                form.style.display = 'none';
+                successMsg.style.display = 'block';
+              } else {
+                errorMsgText.textContent = result.message || 'Veuillez remplir tous les champs obligatoires.';
+                errorMsg.style.display = 'block';
+                btn.disabled = false;
+                btn.textContent = 'Envoyer';
+              }
+            } catch (err) {
+              errorMsgText.textContent = 'Une erreur est survenue. Veuillez réessayer ou nous appeler au 06 78 56 54 30.';
+              errorMsg.style.display = 'block';
+              btn.disabled = false;
+              btn.textContent = 'Envoyer';
+            }
+          });
+        </script>
       </div>
     </div>
   </Section>
